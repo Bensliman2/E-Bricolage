@@ -1,0 +1,113 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Acceuil</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<!--<ion-content padding>
+<ion-card *ngFor="let article of data.articles">
+<ion-img src="/assets/img/chicken-tacos-ingredients_2007909110.jpg">
+  <ion-card-content>
+    <ion-card-title>Hello World</ion-card-title>
+    <p>The content for this card</p>
+  </ion-card-content>
+</ion-img>
+</ion-card>
+</ion-content>-->
+
+<!--<h1 class="headline">Rendez-Vous Chez Le Meilleur</h1>
+
+<div id="app">Home Service Pros</div>-->
+
+<ion-content padding class="card-background-page">
+
+  
+
+   <ion-slides class="card-background"  pager="true" [options]="slideOpts">
+     <ion-slide *ngFor="let slide of slider">
+       
+       <img [src]="slide.image" />
+       <!--<h2 [innerHTML]="slide.title"></h2>
+       <p [innerHTML]="slide.description"></p>-->
+     </ion-slide>
+   </ion-slides>
+
+
+   <h2 class="headline">Rendez-Vous Chez De vrais professionnels assurés et rigoureusement sélectionnés par nos équipes</h2>
+
+
+<ion-button expand="block" size="large" color="warning" class="buttona" (click)="faireunedemande(special)">Faire une demande</ion-button>
+
+<ion-card ngFor="let article of data.articles" (click)="onGoToNewSinglePage(onGoToNewSinglePage(special))">
+  <img class="imagoe" src="/assets/img/se-lancer-en-jardinage.jpg"/>
+  <ion-card-content>
+    <ion-card-title>
+      Jardinage
+      </ion-card-title>
+  </ion-card-content>
+</ion-card>
+
+
+
+<ion-card ngFor="let article of data.articles">
+    <img class="imagoe" src="/assets/img/electricité.jpg"/>
+    <ion-card-content>
+      <ion-card-title>
+          Electricité
+        </ion-card-title>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card ngFor="let article of data.articles">
+      <img src="/assets/img/peinte décorateur.jpeg"/>
+      <ion-card-content>
+        <ion-card-title>
+          Peinture
+          </ion-card-title>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card ngFor="let article of data.articles">
+        <img src="/assets/img/terrain-a-batir.jpg"/>
+        <ion-card-content>
+          <ion-card-title>
+            Bâtiment
+            </ion-card-title>
+        </ion-card-content>
+      </ion-card>
+      
+
+      <ion-card ngFor="let article of data.articles">
+          <img src="/assets/img/charpente.png"/>
+          <ion-card-content>
+            <ion-card-title>
+              Charpente
+              </ion-card-title>
+            <p>
+              The most popular industrial group ever.
+            </p>
+          </ion-card-content>
+        </ion-card>
+        
+
+        <ion-card ngFor="let article of data.articles">
+            <img src="/assets/img/plomberie.jpg"/>
+            <ion-card-content>
+              <ion-card-title>
+                Plomberie
+                </ion-card-title>
+            </ion-card-content>
+          </ion-card>
+
+</ion-content>
+
+
+
+  

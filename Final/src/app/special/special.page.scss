@@ -1,0 +1,50 @@
+/* imagoe {
+	width: 50px;
+    height: 50px;
+} */
+
+.headline {
+    font-family: Geneva;
+    font-size: var(--primary-header);
+    text-align: center;
+    font-size:30px;
+    color: #631263; //#000080   //#004058    //#D4E0CE   //#DADBDD
+    font-weight: 900;
+    margin-bottom: 50px;
+    // margin-left: 25px;
+    letter-spacing: 1px;
+}
+.buttona {
+    margin-bottom: 60px;
+}
+
+#app {
+    //font-family: GCExtraBold;
+    font-size: var(--primary-header);
+    color: #3b3a3b;
+    font-weight: 900;
+    line-height: auto;
+    letter-spacing: 0px;
+    margin-left: 25px;
+    height: var(--word-height);
+    transform: translateY(-10%);
+}
+div {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+ }
+.midium {
+    width: 300px;
+    height: 100px;
+
+
+}
+
+.card-background  {
+    height: 350px;
+    width: 250px;
+
+}

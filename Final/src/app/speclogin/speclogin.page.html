@@ -1,0 +1,29 @@
+<ion-content padding class="animated fadeIn login auth-page">
+  <div padding-horizontal text-center class="animated fadeInDown">
+      <div class="logo"></div>
+      <h2 ion-text class="text-primary">
+        <strong>APPLICATION specialist</strong> 
+      </h2>
+    </div>
+
+
+<form class="list-form"  #form="ngForm"  method="post">
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input ngModel type="email" name="email"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input ngModel type="password" name="password"></ion-input>
+    </ion-item>
+  
+    
+    <ion-button type="submit" expand="block" fill="outline">Login</ion-button>
+</form>
+
+
+
+</ion-content>
+<p text-center>Don't have a account?</p>
+<ion-button expand="full" color="danger"  (click)="registerspec()">Register</ion-button>

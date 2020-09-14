@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>registeruser</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Add User</h2>
+  
+  <form  (submit)="doSignup()" >
+
+    <ion-item>
+      <ion-label>First Name</ion-label>
+      <ion-input type="text" [(ngModel)]="account.first_name" name="first_name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Last name</ion-label>
+      <ion-input type="text" [(ngModel)]="account.last_name" name="last_name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Sex</ion-label>
+      <ion-input type="text" [(ngModel)]="account.sex" name="sex"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>address</ion-label>
+      <ion-input type="text" [(ngModel)]="account.address" name="address"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>phone</ion-label>
+        <ion-input type="text" [(ngModel)]="account.phone" name="phone"></ion-input>
+      </ion-item>
+
+    <ion-item>
+        <ion-label>email</ion-label>
+        <ion-input type="text" [(ngModel)]="account.email" name="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>password</ion-label>
+          <ion-input type="text" [(ngModel)]="account.password" name="password"></ion-input>
+        </ion-item>
+
+    <button ion-button  class="submit-btn" full type="submit"  >REGISTER</button>
+  </form>
+</ion-content>
+

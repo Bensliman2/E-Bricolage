@@ -1,0 +1,55 @@
+<ion-content padding class="animated fadeIn login auth-page">
+  <div padding-horizontal text-center class="animated fadeInDown">
+      <div class="logo"></div>
+      <h2 ion-text class="text-primary">
+        <strong>APPLICATION user</strong> 
+      </h2>
+    </div>
+    <ion-content scroll="false">
+
+
+
+    <form class="list-form" (submit)="signIn()" >
+      <ion-item>
+          <ion-label position="floating">email</ion-label>
+          <ion-input type="text" [(ngModel)]="account.email" name="email"></ion-input>
+      </ion-item>
+    
+        <ion-item>
+            <ion-label position="floating">password</ion-label>
+            <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
+        </ion-item>
+    
+      <button ion-button  type="submit" full >Login</button>
+    </form>
+
+<!--
+
+  <form class="list-form" (submit)="signIn()">
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input  type="email" [(ngModel)]="account.email"  name="email" ></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input  type="password" [(ngModel)]="account.password" name="password"  ></ion-input>
+    </ion-item>
+    <ion-button type="submit">Login</ion-button>
+</form>
+
+
+-->
+
+
+</ion-content>
+<p text-center>Don't have a account?</p>
+
+<ion-button expand="full" color="danger" (click)="registeruser()" >Register Now</ion-button>
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title><strong>Ur </strong> Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-page">
+  <div class="login-content">
+
+    <!-- Logo -->
+    <div padding text-center>
+      <div class="logo"></div>
+      <h2 ion-text class="text-primary">
+        <strong>User </strong> Profile
+      </h2>
+    </div>
+
+    <!-- Login form -->
+    <form class="list-form">
+      <ion-item >
+        <ion-label >
+        <ion-icon name="person" item-start class="text-primary"></ion-icon>
+          Full Name :
+        </ion-label>
+        <p>{{first_name}}</p>
+        <p>{{last_name}}</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label >
+          <ion-icon name="mail" item-start class="text-primary"></ion-icon>
+          Email :
+        </ion-label>
+        <p>{{email}}</p>
+      </ion-item>
+      <ion-item>
+          <ion-label >
+              <ion-icon name="call"></ion-icon>
+            Phone :
+          </ion-label>
+          <p>{{phone}}</p>
+      </ion-item>
+      <ion-item>
+        <ion-label >
+            <ion-icon name="call"></ion-icon>
+          Address :
+        </ion-label>
+        <p>{{address}}</p>
+    </ion-item>
+    </form>
+   
+  </div>
+</ion-content>
+<ion-button href="/useredit" >Edit My Profil</ion-button>

@@ -1,0 +1,26 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title><strong>Make </strong> Command</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form class="list-form" (submit)="setCommande()" >
+        <ion-item>
+          <ion-label floating>
+            <ion-icon name="person" item-start class="text-primary"></ion-icon>
+            Description :
+          </ion-label>
+          <ion-input type="text"  [(ngModel)]="command.details" name="details"  ></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>
+              <ion-icon name="calendar"></ion-icon>
+              Date :
+            </ion-label>
+            <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="command.due_date" name="due_date"></ion-datetime>
+          </ion-item>
+        <ion-button type="submit" expand="full" color="primary">Envoyer</ion-button>
+      </form>
+</ion-content>
